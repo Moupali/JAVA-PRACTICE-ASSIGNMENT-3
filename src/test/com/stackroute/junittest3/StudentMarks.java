@@ -7,14 +7,16 @@
 
 package com.stackroute.junittest3;
 
-public class StudentMarks {
-    public int studentsGrades(int numOfStudents,int stuGrades[])
+public class StudentMarks
+{  //class starts here
+
+    public int studentsGrades(int numOfStudents,int studentGrades[])
     {
         int i;
         System.out.println("Enter Grades of each Students");
         for(i=0;i<numOfStudents;i++)
         {
-            if(stuGrades[i]<0 || stuGrades[i]>100)
+            if(studentGrades[i]<0 || studentGrades[i]>100)
             {
                 System.out.println("Error!! Wrong Input");
                 return 0;

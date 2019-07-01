@@ -20,8 +20,10 @@ public class ChessBoardProblemTest {
     }
 
     @Test
-    public void chessBoardPattern() {
+    public void chessBoardPattern1() {
+
         String res=obj.printChessBoard();
+
         assertEquals("WW|BB|WW|BB|WW|BB|WW|BB|\n" +
                 "BB|WW|BB|WW|BB|WW|BB|WW|\n" +
                 "WW|BB|WW|BB|WW|BB|WW|BB|\n" +
@@ -32,4 +34,25 @@ public class ChessBoardProblemTest {
                 "BB|WW|BB|WW|BB|WW|BB|WW|\n",res);
 
     }
+    @Test
+    public void chessBoardPattern2()
+    {
+
+        String res=obj.printChessBoard();
+
+        assertEquals("BB WW BB WW \n" +
+                "BB WW BB WW \n" +
+                "BB WW BB WW \n" +
+                "BB WW BB WW \n",res);
+    }
+
+    @Test
+    public void chessBoardPattern3()
+    {
+
+        String res=obj.printChessBoard();
+
+        assertEquals("BB WW \n" +
+                         "BB WW \n",res);
+}
 }

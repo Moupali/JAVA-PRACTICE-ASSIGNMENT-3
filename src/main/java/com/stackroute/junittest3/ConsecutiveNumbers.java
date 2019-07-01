@@ -15,18 +15,26 @@ public class ConsecutiveNumbers {
     public String consecutivecheck(String number)
     {
         String[] array=number.split(",");
+        //Splitting the String and storing it in String array
+
+        //initialisation
         int diff;
         boolean flag=true;
+
+        //for loop begins
         for(int i=0;i<array.length-1;i++)
         {
             diff = valueOf(array[i])-valueOf(array[i+1]);
+            //Finding difference between two consecutive number
+
             if(Math.abs(diff)!=1)
             {
                 flag=false;
                 break;
             }
-        }
+        }//for loop ends here
 
+        //printing
         if(flag)
             return ("The numbers are consecutive");
         else

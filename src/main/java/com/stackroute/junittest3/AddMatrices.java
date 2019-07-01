@@ -16,15 +16,24 @@ public class AddMatrices {
 
     public String addition(int row, int column, int matrix1[][], int matrix2[][]) {
 
+        //initialisation
         int sum = 0;
         String output="";
 
+
         System.out.println("Enter elements in the array:");
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < column; j++) {
+
+        //Entering array elements
+        for (int i = 0; i < row; i++)
+        {
+
+            for (int j = 0; j < column; j++)
+            {
+
                 sum = sum + matrix1[i][j] + matrix2[i][j];
                 output = output + sum + " ";
             }
+
             System.out.println();
             output = output + "\n";
             sum = 0;

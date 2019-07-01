@@ -23,15 +23,15 @@ public class StudentMarksTest {
 
     @Test
     public void givenStringShouldReturnErrorMessage() {
-        int stuGrades[] = {98, 190, 99, 77};
-        int Result = obj.studentsGrades(4, stuGrades);
+        int studentGrades[] = {98, 190, 99, 77};
+        int Result = obj.studentsGrades(4, studentGrades);
         assertEquals(0, Result);
     }
 
     @Test
     public void givenStringShouldReturn1() {
-        int stuGrades[] = {98, 80, 99, 77};
-        int Result = obj.studentsGrades(4, stuGrades);
+        int studentGrades[] = {98, 80, 99, 77};
+        int Result = obj.studentsGrades(4, studentGrades);
         assertEquals(1, Result);
     }
 }

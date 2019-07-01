@@ -28,10 +28,9 @@ public class ConsecutiveNumbersTest {
     }
 
     @AfterClass
-    public static void tearDownAfterClass() {
+    public static void tearDownAfterClass()
+    {
         System.out.println("AfterClass");
-
-
     }
 
     @Test

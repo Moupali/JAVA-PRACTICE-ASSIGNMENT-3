@@ -15,28 +15,43 @@ package com.stackroute.junittest3;
 public class ChessBoardProblem {
     public String printChessBoard()
     {
+        //initialisation
         String board[][]=new String[8][8];
         String result="";
         int i,j;
-        for(i=0;i<8;i++) {
-            for (j = 0; j < 8; j++) {
+
+        //for loop for row begins here
+        for(i=0;i<8;i++)
+        {
+            //for loop for column begins here
+            for (j = 0; j < 8; j++)
+            {
                 if ((i + j) % 2 == 0) {
                     board[i][j] = "WW|";
-                } else {
+                }
+                else
+                    {
                     board[i][j] = "BB|";
                 }
-            }
-        }
+            }//for loop ends here
+        }//for loop ends here
+
+        //Printing Chess Board
             System.out.println("--------CHESS BOARD--------");
-            for (i = 0; i < 8; i++) {
+
+            //for loop for row begins here
+            for (i = 0; i < 8; i++)
+            {
+
+                //for loop for row begins here
                 for (j = 0; j < 8; j++) {
                     System.out.print(board[i][j]);
                     result = result + board[i][j];
 
-                }
+                }//for loop ends here
                 System.out.println();
                 result = result + "\n";
-            }
+            }//for loop ends here
         return result;
 
     }
