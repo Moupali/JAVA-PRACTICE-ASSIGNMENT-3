@@ -20,9 +20,7 @@ public class VowelCheckerTest {
     }
 
     @Test
-    public void givenStringWillReturnWithoutVowels1() {
-        String input[]={"India","United States"};
-        String expected[]={"Ind","Untd Stts"};
+    public void givenStringWillReturnLengthWithouCharacter() {
         String res[]=obj.checking(input);
         assertNotEquals(expected,res);
     }
